@@ -20,14 +20,7 @@
 <h1>REJOINDRE VERTEX</h1>
 
 
-<form 
-    name="candidature"
-    method="POST"
-    data-netlify="true"
->
-
-
-<input type="hidden" name="form-name" value="candidature">
+<form action="https://formspree.io/f/mvkppbod" method="POST">
 
 
 <label>
@@ -35,10 +28,9 @@ Pseudo
 </label>
 
 <input 
-    type="text"
-    name="pseudo"
-    required
->
+type="text" 
+name="pseudo"
+required>
 
 
 <label>
@@ -46,10 +38,34 @@ Pseudo
 </label>
 
 <input 
-    type="number"
-    name="age"
-    required
->
+type="number" 
+name="age"
+required>
+
+
+<label>
+Adresse mail
+</label>
+
+<input 
+type="email"
+name="email"
+required>
+
+
+<label>
+Domaine d'intérêt
+</label>
+
+<select name="domaine">
+
+<option>Développement</option>
+<option>Cybersécurité</option>
+<option>Jeux vidéo</option>
+<option>Électronique</option>
+<option>Autre</option>
+
+</select>
 
 
 <label>
@@ -57,8 +73,8 @@ Compétences
 </label>
 
 <textarea
-    name="competences"
-    placeholder="Ex : Python, cybersécurité, Blender, électronique..."
+name="competences"
+placeholder="Ex : Python, C++, Blender, Arduino..."
 ></textarea>
 
 
@@ -67,24 +83,13 @@ Motivation
 </label>
 
 <textarea
-    name="motivation"
-    placeholder="Pourquoi souhaitez-vous rejoindre Vertex ?"
-    required
-></textarea>
-
-
-<label>
-Discord
-</label>
-
-<input
-    type="text"
-    name="discord"
->
+name="motivation"
+placeholder="Pourquoi souhaitez-vous rejoindre Vertex ?"
+required></textarea>
 
 
 <button type="submit">
-Envoyer la candidature
+Envoyer ma candidature
 </button>
 
 
